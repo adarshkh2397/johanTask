@@ -1,0 +1,22 @@
+.tile {
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.tile h2,h5 {
+    color: #336;
+    padding: 25px 0;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+}
+
+.tile p {
+    color: #fff;
+    padding-bottom: 2px;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+    background: #16222a;
+    background: -webkit-linear-gradient(to right,#3a6073,#16222a);
+    background: linear-gradient(to right,#3a6073,#16222a);
+    border-radius: 0 0 15px 15px;
+}

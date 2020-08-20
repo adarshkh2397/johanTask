@@ -1,0 +1,22 @@
+body{
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  .sketchy {
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 3px solid #333333;
+      border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+      background: #ffffff;
+      position: relative;
+  
+      &::before {
+          content: '';
+          border: 2px solid #353535;
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+      }
+  }
+  
