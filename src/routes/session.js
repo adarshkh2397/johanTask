@@ -28,12 +28,11 @@ sessionRouter.post("", async (req, res) => {
 
 sessionRouter.delete("", ({ session }, res) => {
   try {
-    const user = session.user;
-    if (user) {
+    const cookie = session.cookie;
+    if (cookie {
       session.destroy(err => {
         if (err) throw (err);
         res.clearCookie(SESS_NAME);
-        res.send(user);
       });
     } else {
       throw new Error('Something went wrong');
